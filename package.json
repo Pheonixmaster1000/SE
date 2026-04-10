@@ -1,0 +1,25 @@
+{
+  "name": "auction-hub",
+  "version": "1.0.0",
+  "description": "Online auction platform with role-based access and JSON storage",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node --test tests/bidding.test.js tests/auth.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.1",
+    "express-session": "^1.18.1",
+    "joi": "^17.13.3",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.1"
+  }
+}
